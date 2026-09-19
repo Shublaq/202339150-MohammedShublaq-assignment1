@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1f2937;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+}
+
+header {
+    min-height: 100vh;
+    background-color: #0f172a;
+    color: white;
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: #60a5fa;
+}
+
+.intro {
+    max-width: 1100px;
+    min-height: calc(100vh - 70px);
+    margin: 0 auto;
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.intro > p:first-child {
+    color: #93c5fd;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.intro h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.tagline {
+    max-width: 700px;
+    color: #cbd5e1;
+    font-size: 21px;
+    margin-bottom: 28px;
+}
+
+.primaryButton {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.primaryButton:hover {
+    background-color: #1d4ed8;
+}
+
+.pageSection {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 30px;
+}
+
+.pageSection h2 {
+    color: #0f172a;
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+.pageSection h3 {
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+#about > p {
+    max-width: 850px;
+    margin-bottom: 30px;
+}
+
+.skillsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+}
+
+.skillsList li {
+    background-color: #dbeafe;
+    color: #1e40af;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.projectCard {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+.projectCard img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.projectCard h3 {
+    padding: 24px 24px 0;
+}
+
+.projectCard p {
+    padding: 0 24px 24px;
+}
+
+#contact > p {
+    margin-bottom: 24px;
+}
+
+#contact > p a {
+    color: #2563eb;
+}
+
+form {
+    max-width: 700px;
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.formGroup input,
+.formGroup textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #94a3b8;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    border-color: #2563eb;
+    outline: 2px solid #bfdbfe;
+}
+
+.formGroup textarea {
+    resize: vertical;
+}
+
+#formMessage {
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #0f172a;
+    color: white;
+    padding: 24px 30px;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .projectsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .projectCard {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .intro {
+        min-height: calc(100vh - 120px);
+        padding: 50px 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .intro h1 {
+        font-size: 38px;
+    }
+
+    .tagline {
+        font-size: 18px;
+    }
+
+    .pageSection {
+        padding: 60px 20px;
+    }
+
+    .pageSection h2 {
+        font-size: 30px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
