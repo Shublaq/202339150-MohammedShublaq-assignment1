@@ -1,0 +1,16 @@
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# VS Code local settings
+.vscode/
+
+# Log files
+*.log
+
+# Installed packages, if added later
+node_modules/
+
+# Environment files that may contain secrets
+.env
+.env.*
