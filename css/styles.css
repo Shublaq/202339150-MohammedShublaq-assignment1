@@ -1,3 +1,4 @@
+/* Reset default browser spacing */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,6 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* General page styles */
 body {
     background-color: #f8fafc;
     color: #1f2937;
@@ -19,6 +21,7 @@ a {
     color: inherit;
 }
 
+/* Header and navigation */
 header {
     min-height: 100vh;
     background-color: #0f172a;
@@ -54,6 +57,7 @@ nav ul a:hover {
     color: #60a5fa;
 }
 
+/* Introductory section */
 .intro {
     max-width: 1100px;
     min-height: calc(100vh - 70px);
@@ -101,6 +105,7 @@ nav ul a:hover {
     background-color: #1d4ed8;
 }
 
+/* Shared content section styles */
 .pageSection {
     max-width: 1100px;
     margin: 0 auto;
@@ -123,6 +128,7 @@ nav ul a:hover {
     margin-bottom: 30px;
 }
 
+/* Skills list */
 .skillsList {
     display: flex;
     flex-wrap: wrap;
@@ -138,6 +144,7 @@ nav ul a:hover {
     font-weight: bold;
 }
 
+/* Project grid and cards */
 .projectsGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -166,6 +173,7 @@ nav ul a:hover {
     padding: 0 24px 24px;
 }
 
+/* Contact information and form */
 #contact > p {
     margin-bottom: 24px;
 }
@@ -212,6 +220,7 @@ form {
     resize: vertical;
 }
 
+/* Footer */
 footer {
     background-color: #0f172a;
     color: white;
@@ -219,7 +228,7 @@ footer {
     text-align: center;
 }
 
-
+/* Tablet layout */
 @media (max-width: 900px) {
     .projectsGrid {
         grid-template-columns: 1fr;
@@ -231,6 +240,7 @@ footer {
     }
 }
 
+/* Mobile layout */
 @media (max-width: 600px) {
     nav {
         flex-direction: column;

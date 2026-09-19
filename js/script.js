@@ -1,8 +1,8 @@
-// Change the greeting according to the current time.
-
+// Select the text and get the visitor's current hour.
 let greeting = document.getElementById("greeting");
 let currentHour = new Date().getHours();
 
+// Change the greeting according to the current time.
 if (currentHour < 12) {
     greeting.textContent = "Good morning, I am";
 }
