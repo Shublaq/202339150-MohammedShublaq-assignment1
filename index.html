@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Shublaq | Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header id="home">
+        <nav>
+            <a href="#home">Mohammed Shublaq</a>
+            <ul>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <p>Hello, I am</p>
+            <h1>Mohammed Shublaq</h1>
+            <p class="tagline">Junior Software Engineering Student | Aspiring Full Stack Web Developer</p>
+            <a href="#projects" class="primaryButton">View My Projects</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="pageSection">
+            <h2>About Me</h2>
+            <p>
+                I am a junior software engineering student at KFUPM with a strong
+                interest in technology and a growing passion for web development.
+                I have experience with object oriented programming in Java,
+                basic programming in Python, and interface design
+                using Figma. I am currently developing my web engineering skills,
+                and my goal is to become a full stack web developer who builds
+                useful applications with real impact.
+            </p>
+
+            <h3>Skills</h3>
+            <ul class="skillsList">
+                <li>Java</li>
+                <li>JavaFX</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Figma</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="pageSection">
+            <h2>Projects</h2>
+
+            <div class="projectsGrid">
+                <article class="projectCard">
+                    <img
+                        src="https://placehold.co/600x350?text=Room+Booking+System"
+                        alt="Preview placeholder for the KFUPM Room Booking System"
+                        width="600"
+                        height="350"
+                    >
+                    <h3>KFUPM Room Booking System</h3>
+                    <p>
+                        I collaborated on a room booking application developed
+                        with Java and JavaFX. The application allowed users to
+                        check room availability, make reservations, review
+                        bookings, and sign in through separate user and
+                        administrator accounts.
+                    </p>
+                </article>
+
+                <article class="projectCard">
+                    <img 
+                        src="https://placehold.co/600x350?text=KFUPM+Hub"
+                        alt="Preview placeholder for the KFUPM Hub project"
+                        width="600"
+                        height="350"
+                    >
+                    <h3>KFUPM Hub</h3>
+                    <p>
+                        I helped design an interactive Figma prototype for a
+                        centralized student platform that combined assignments,
+                        announcements, course files, calendars, and instructor
+                        communication from Blackboard, email, and Microsoft
+                        Teams. The project involved requirements analysis,
+                        interface design, and applying the software development
+                        lifecycle to produce a functional final prototype.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="pageSection">
+            <h2>Contact Me</h2>
+
+            <p>
+                You can contact me at
+                <a href="mailto:mohammed.sheblaq@gmail.com">
+                    mohammed.sheblaq@gmail.com
+                </a>
+                or use the form below.
+            </p>
+
+            <form id="contactForm">
+                <div class="formGroup">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="name" required>
+                </div>
+                
+                <div class="formGroup">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" required>
+                </div>
+
+                <div class="formGroup">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="6" name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="primaryButton">Send Message</button>
+                <p id="formMessage"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Mohammed Shublaq. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -6,6 +6,9 @@
 
 I used ChatGPT to review the assignment requirements, divide the work into manageable steps, and explain how to create the initial GitHub repository and project structure.
 
+ChatGPT helped me organize my background, technical experience, career goals, and project details into concise portfolio content. I reviewed the revised text and verified that it accurately represented my own experience before using it.
+
+
 ## Benefits and Challenges
 
 To be completed during development.
