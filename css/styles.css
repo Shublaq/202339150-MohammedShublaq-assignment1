@@ -212,17 +212,13 @@ form {
     resize: vertical;
 }
 
-#formMessage {
-    margin-top: 16px;
-    font-weight: bold;
-}
-
 footer {
     background-color: #0f172a;
     color: white;
     padding: 24px 30px;
     text-align: center;
 }
+
 
 @media (max-width: 900px) {
     .projectsGrid {
